@@ -1,4 +1,4 @@
 
 StartApp:
-        @docker stack deploy --compose-file docker-compose.yml monitoring
+	@docker stack deploy --compose-file docker-compose.yml monitoring
 
