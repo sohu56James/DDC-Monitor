@@ -14,7 +14,7 @@ receivers:
   - name: 'slack'
     slack_configs:
       - send_resolved: true
-        api_url: 'YOURTOKENGOESHERE'
+        #api_url: 'null'#
         username: 'Prometheus - Alerts'
         channel: '#alert-notifications'
         text: '{{ .CommonAnnotations.summary }} ---> {{ .CommonAnnotations.description }}'
@@ -24,4 +24,5 @@ receivers:
       # Whether or not to notify about resolved alerts.
       - send_resolved: true
         # The endpoint to send HTTP POST requests to.
-        url: 'http://logstash:8080/
+        #logstash_url: 'null'#
+
