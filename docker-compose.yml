@@ -76,7 +76,7 @@ services:
       LOGSTASH_URL: http://logstash:8080/
     command: -config.file=/etc/alertmanager/config.yml
     volumes:
-      - ./alertmanager/config.conf:/etc/alertmanager/config.yml
+      - ./alertmanager:/etc/alertmanager
     deploy:
       mode: replicated
       replicas: 1
