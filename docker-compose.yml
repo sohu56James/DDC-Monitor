@@ -75,8 +75,6 @@ services:
       SLACK_API: ${SLACK_API:-YOURTOKENGOESHERE}
       LOGSTASH_URL: http://logstash:8080/
     command: -config.file=/etc/alertmanager/config.yml
-    volumes:
-      - ./alertmanager:/etc/alertmanager
     deploy:
       mode: replicated
       replicas: 1
