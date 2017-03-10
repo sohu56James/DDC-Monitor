@@ -65,7 +65,7 @@ services:
           memory: 4M
 
   alertmanager:
-    image: registry.aliyuncs.com/hydsoft/alertmanager
+    image: registry.aliyuncs.com/hydsoft/alertmanager:latest
     networks:
       - monitoring
       # - logging
