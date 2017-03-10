@@ -16,7 +16,7 @@ receivers:
       - send_resolved: true
         #api_url: 'null'#
         username: 'Prometheus'
-        channel: '#random'
+        channel: '#task'
         text: '{{ .CommonAnnotations.summary }} ---> {{ .CommonAnnotations.description }}'
         icon_emoji: ':dart:'
   - name: 'logstash'
