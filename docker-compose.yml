@@ -65,7 +65,7 @@ services:
           memory: 4M
 
   alertmanager:
-    image: basi/alertmanager:${ALERTMANAGER_VERSION:-v0.1.0}
+    image: registry.aliyuncs.com/hydsoft/alertmanager
     networks:
       - monitoring
       # - logging
